@@ -1,0 +1,157 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Open Sans', Arial;
+}
+
+/* body {
+    min-height: 100vh;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkI296bXOvm7p017i8N_LK-X7U03d9g0RoRQ&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+} */
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 1.5rem;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    color: aliceblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.fas {
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.list-nav-bar {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
+}
+
+.list-item a {
+    cursor: pointer;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-left: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.list-item a:hover {
+    color: #a0a0a0;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 25vh;
+}
+
+.main-content h1 {
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .list-item a {
+        font-size: 0.875rem;
+    }
+
+    .logo {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 578px) {
+
+    .list-item a {
+        font-size: 1rem;
+
+    }
+
+    .list-nav-bar.active {
+        right: 0;
+    }
+
+    .list-nav-bar {
+        display: flex;
+        position: fixed;
+        right: -100%;
+        top: 60px;
+        width: 35%;
+        background-color: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        flex-direction: column;
+        transition: 0.7s;
+        gap: 18px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/* CSS */
+.button-81 {
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-81:hover {
+    background-color: #0062ff;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .button-81 {
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
+    }
+}
